@@ -43,5 +43,7 @@ fbName = string of full name of person you want replaced
 newName = string of what you want their name replaced by
 <br>
 newImage = string of image url you want their profile picture replaced by
+<br>
+ie. replaceWith('Bob Smith','Lord Cthulhu', 'https://occamsrazormag.files.wordpress.com/2014/08/cthulhu.jpg')
 
 And hopefully it works :D
