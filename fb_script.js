@@ -19,7 +19,7 @@
 			// set variable to profile pic url
 			var originalImageUrl = $(".fbNubFlyout:has(a:contains("+name+")) .conversation div img:first").attr('src')
 			// replace all profile pictures with the same source to imgUrl input by user
-			$("img[src*="+originalImageUrl+"]").attr('src', replaceImage);
+			$("img[src*='"+originalImageUrl+"']").attr('src', replaceImage);
 			// select the chat flyout
 			$(".fbNubFlyout:has(a:contains("+name+"))");
 			// replace name in conversation headline
