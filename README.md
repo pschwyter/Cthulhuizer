@@ -5,7 +5,7 @@ Ok, so this is nowhere near ready to be used by people but by popular request he
 
 These are the steps you need to go through to test it out:
 
-<strong>1. Clone down this repo</strong
+<strong>1. Clone down this repo</strong>
 
 <!--Note: step 2 is taken from: http://stackoverflow.com/questions/10611796/is-there-any-way-to-load-a-local-js-file-dynamically-->
 <strong>2. Load the extension by going to chrome://extensions, enabling Developer Mode, and selecting the new folder with Load unpacked extension....</strong>
