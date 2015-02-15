@@ -10,7 +10,7 @@ These are the steps you need to go through to test it out:
 <!--Note: step 2 is taken from: http://stackoverflow.com/questions/10611796/is-there-any-way-to-load-a-local-js-file-dynamically-->
 2. Load the extension by going to chrome://extensions, enabling Developer Mode, and selecting the new folder with Load unpacked extension....
 
-Now you can access all the files in your extension directory using chrome-extension://[app_id]/[file_name], where "app_id" is the hash listed for the extension on the chrome://extensions page. Note that because the protocols and hostnames differ from where you've doing your actual work (unless you decide to do all your development in the extension folder, which might be acceptable to you), the extension resources are cross-domain and can only be loaded via <script> tag.
+Now you can access all the files in your extension directory using chrome-extension://[app_id]/[file_name], where "app_id" is the hash listed for the extension on the chrome://extensions page. Note that because the protocols and hostnames differ from where you've doing your actual work (unless you decide to do all your development in the extension folder, which might be acceptable to you), the extension resources are cross-domain and can only be loaded via a script tag.
 
 3. Visit facebook and open the console
 
