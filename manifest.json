@@ -1,0 +1,6 @@
+{
+  "name": "Cthuluizer",
+  "manifest_version": 2,
+  "version": "1.0",
+  "web_accessible_resources": ["jquery-1.11.2.min.js", "fb_script.js"]
+}
