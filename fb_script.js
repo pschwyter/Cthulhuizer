@@ -1,9 +1,9 @@
 // $(document).ready(function(){
 
-	function replaceWith(fbName, newName, imgUrl){
+	function replaceWith(fbName, newName, newImgUrl){
 		var name = fbName;
 		var replaceName = newName;
-		var replaceImage = imgUrl;
+		var replaceImage = newImgUrl;
 
 		// Check chat log for person
 		function checkChatSideBar(){
@@ -22,7 +22,7 @@
 				console.log(originalImageUrl);
 				var originalImageUrl = $(".fbNubFlyout:has(a:contains("+name+")) .conversation div img:first").attr('src');
 			}
-			// replace all profile pictures with the same source to imgUrl input by user
+			// replace all profile pictures with the same source to newImgUrl input by user
 			$("img[src*='"+originalImageUrl+"']").attr('src', replaceImage);
 			// select the chat flyout
 			$(".fbNubFlyout:has(a:contains("+name+"))");
@@ -43,6 +43,7 @@
 		// and reset click handlers
 		$(".fbChatOrderedList a:has(span:contains("+name+"))").click(function(){
 			console.log('chat sidebar toggled');
+			// need to set a timeout since click events are executed immediately
 			setTimeout(function(){
 				checkConversations();
 				// when bottom chat is toggled we need to replace the names again!
